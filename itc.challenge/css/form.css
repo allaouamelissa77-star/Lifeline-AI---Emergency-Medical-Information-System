@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#f1f5f9;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+.form-container{
+    width:900px;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+.subtitle{
+    text-align:center;
+    margin-bottom:35px;
+    color:#555;
+}
+.form-section{
+    margin-bottom:35px;
+}
+.form-section h2{
+    margin-bottom:20px;
+    color:#2563eb;
+    border-bottom:2px solid #e5e7eb;
+    padding-bottom:8px;
+}
+/* GRID */
+.grid{  
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+.full{
+    grid-column:1 / 3;
+}
+/* INPUT */
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+label{
+    font-size:14px;
+    margin-bottom:6px;
+    color:#444;
+}
+input, select, textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+textarea{
+    min-height:80px;
+    resize:vertical;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#2563eb;
+    outline:none;
+}
+/* BUTTON */
+.submit-btn{
+    margin-top:25px;
+    width:100%;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.submit-btn:hover{
+    background:#1e40af;
+}
+/* QR BUTTON */
+.qr-btn{
+    margin-top:15px;
+    width:100%;
+    padding:15px;
+    background:#0ea5e9;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.qr-btn:hover{
+    background:#0284c7;
+}
+/* QR SECTION */
+.qr-section{
+    margin-top:40px;
+    text-align:center;
+}
+.qr-section h3{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+#qr-box{
+    width:220px;
+    height:220px;  
+    margin:0 auto 15px auto;
+    border:2px dashed #ccc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+}
+#qr-image{
+    max-width:100%;
+}
+/* DOWNLOAD QR BUTTON */
+.download-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 22px;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    border-radius:8px;
+    font-weight:500;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:all 0.3s ease;
+    width:fit-content;
+    margin:20px auto;
+}
+.download-btn:hover{
+    background:linear-gradient(135deg,#1e40af,#1e3a8a);
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+.qr-note{
+    color:#555;
+    text-align: center;
+}

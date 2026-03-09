@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lifeline AI</title>
+   <link rel="stylesheet" href="css/index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="assests/logo.png.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+   
+   
+</head>
+<body>
+<!-- NAVBAR --> 
+   <header>
+      <nav class="navbar">
+         <div class="logo"><img src="assests/logo.png.png" alt="logo"></div>
+         <ul class="nav-links">
+            <li><a href="pages/dashboard.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#work">How it Works</a></li>
+            <li><a href="pages/profile.html">Profile</a></li>
+         </ul>
+         <button class="btn-login"><a href="pages/login.html">Login</a></button>
+      </nav>
+   </header>
+<!-- HERO SECTION -->
+   <section class="hero">
+      <div class="hero-text">
+         <h1>Your Medical Information <br> When It Matters Most</h1>
+         <p>Store your essential medical data securely and allow doctors instant access during emergencies through a simple QR code.</p>
+         <div class="hero-buttons">
+            <button class="btn-primary"><a href="pages/form.html">Get Started</a></button>
+            <button class="btn-secondary">Learn More</button>
+         </div>
+      </div>
+      <div class="hero-image">
+         <img src="assests/Online Doctor-rafiki.png" alt="medical illustration">
+      </div>
+   </section>
+<!-- HOW IT WORKS -->
+   <section class="steps" id="work">
+      <h2>How Lifeline AI Works</h2>
+      <div class="steps-container">
+         <div class="step">
+            <h3>1️⃣ Create Profile</h3>
+            <p>Enter your medical information like blood type, allergies, and chronic diseases.</p>
+         </div>
+         <div class="step">
+            <h3>2️⃣ Generate QR Code</h3>
+            <p>Your personal QR code is generated and linked to your medical profile.</p>
+         </div>
+         <div class="step">
+            <h3>3️⃣ Instant Access</h3>
+            <p>Doctors scan the QR code to instantly access life-saving medical information.</p>
+         </div>
+      </div>
+   </section>
+<!-- FEATURES -->
+   <section class="features" id="features">
+      <h2>Why Lifeline AI?</h2>
+      <div class="features-container">
+         <div class="feature-card">
+            <h3>🔒 Secure Data</h3>
+            <p>Your medical information is safely stored and protected.</p>
+         </div>
+         <div class="feature-card">
+            <h3>⚡ Fast Emergency Access</h3>
+            <p>Doctors can retrieve your medical history instantly.</p>
+         </div>
+         <div class="feature-card">
+            <h3>📱 QR Code System</h3>
+            <p>Scan your code to quickly access your health profile.</p>
+         </div>
+      </div>
+   </section>
+   <section class="demo">
+      <h2>🚑 Emergency QR Access Demo</h2>
+      <p>See how doctors can instantly access life-saving medical information.</p>
+      <div class="demo-container">
+         <div class="qr-box">
+            <div id="qrCode">
+               <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=lifeline-demo" alt="QR Code">
+            </div>
+            <button onclick="simulateScan()">Simulate Doctor Scan</button>
+         </div>
+         <div class="scan-result" id="scanResult">
+            <h3>Patient Emergency Profile</h3>
+            <ul>
+               <li><strong>Blood Type:</strong> O+</li>
+               <li><strong>Allergies:</strong> Penicillin</li>
+               <li><strong>Chronic Disease:</strong> Diabetes</li>
+               <li><strong>Medication:</strong> Insulin</li>
+               <li><strong>Emergency Contact:</strong> +213 555 00 00</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+<!-- CTA -->
+   <section class="cta">
+      <h2>Be Prepared For Emergencies</h2>
+      <p>Create your medical profile today.</p>
+      <button class="btn-primary"><a href="pages/signup.html">Sign Up Now</a></button>
+   </section>
+<!-- FOOTER -->
+   <footer class="footer">
+        <div class="part1">
+            <img src="assests/logo.png.png" alt="lifline">
+            <p><b>platform designed to provide instant <br> access to critical medical information  during emergencies.With a secure digital medical profile and a unique QR code.</b></p>
+        </div>
+        <div class="part2">
+            <p><b>Quick Links</b></p>
+            <a href="pages/dashboard.html">Home</a> <br>
+            <a href="#features">features</a> <br>
+            <a href="#work">how it works</a> <br>
+            <a href="pages/profile.html">profile</a>
+        </div>
+        <div class="part3">
+            <p><b>Resources</b></p>
+            <a href="#">Help & Support</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">Terms of Services</a> <br>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="part4">
+            <p><b>Follow Us</b></p>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-linkedin"></i>
+            <p>📧 contact@lifline.dz</p>
+            <p>📞 +213 XXX XX XX XX</p>
+        </div>
+    </footer>
+    <hr>
+   <p class="copyright">© 2026 Lifeline AI — Emergency Health Assistant</p>
+</body>
+<script src="js/main.js"></script>
+</html>

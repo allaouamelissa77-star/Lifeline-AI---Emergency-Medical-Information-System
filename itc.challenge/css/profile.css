@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+margin:0;
+font-family:Arial;
+background:#eef2f7;
+display:flex;
+justify-content:center;
+padding:40px;
+/* PAGE LOAD ANIMATION */
+animation:fadeIn 0.8s ease;
+}
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.container{
+width:600px;
+}
+.header{
+text-align:center;
+margin-bottom:30px;
+}
+.header h1{
+color:#dc2626;
+}
+.patient-info{
+display:flex;
+align-items:center;
+gap:15px;
+}
+.patient-photo{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #e2e8f0;
+}
+.patient-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+margin-bottom:20px;
+/* HOVER ANIMATION */
+transition:all 0.3s ease;
+}
+.patient-card:hover{
+transform:translateY(-15px);
+box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+.blood-type{
+font-size:40px;
+font-weight:bold;
+color:white;
+background:#dc2626;
+padding:15px 25px;
+border-radius:10px;
+animation:heartplus 2s infinite;
+}
+@keyframes heartplus{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.1);
+}
+100%{
+transform:scale(1);
+}
+}
+.alert{
+background:#dc2626;
+color:white;
+padding:18px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+margin-bottom:20px;
+animation:alertpulse infinite;
+}
+@keyframes alertpluse{
+0%{
+box-shadow:0 0 0 0 rgba(220,38,38,0.6);
+}
+70%{
+box-shadow:0 0 0 12px rgba(220,38,38,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(220,38,38,0);
+}
+}
+.card{
+background:white;
+padding:22px;
+border-radius:12px;
+margin-bottom:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+opacity:0;
+transform:translateY(20px);
+animation:cardAppear 0.6s ease forwards;
+transition:all 0.3s ease;
+}
+.card:nth-child(1){animation-delay:0.2s}
+.card:nth-child(2){animation-delay:0.35s}
+.card:nth-child(3){animation-delay:0.5s}
+.card:nth-child(4){animation-delay:0.65s}
+.card:hover{
+transform:translateY(-15px);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+@keyframes cardAppear{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+.call-btn{
+margin-top:10px;
+background:#16a34a;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+transition:all 0.2s ease;
+position:relative;
+overflow:hidden;
+}
+.call-btn:hover{
+background:#15803d;
+transform: translateY(-10px)
+}
+.call-btn:active{
+transform:scale(0.95);
+}
+.ripple{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,0.6);
+transform:scale(0);
+animation:ripple 0.6s linear;
+pointer-events:none;
+}
+@keyframes ripple{
+to{
+transform:scale(4);
+opacity:0;
+}
+}
+.instructions{
+border-left:6px solid orange;
+background:#fff7ed;
+}
+.footer{
+text-align:center;
+margin-top:25px;
+color:#64748b;
+}

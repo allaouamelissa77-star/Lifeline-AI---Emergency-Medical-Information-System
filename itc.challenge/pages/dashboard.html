@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Dashboard</title>
+    <link rel="stylesheet" href="..//css/dashboard.css">
+    <link rel="icon" type="image/png" href="assests/logo.png.png">
+</head>
+<body>
+    <div class="dashboard">
+<!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2 class="logo">LIfELINE</h2>
+            <ul class="menu">
+                <li>📅 Schedule</li>
+                <li>👨‍⚕️ Employees</li>
+                <li class="active">🧑‍🤝‍🧑 Patients</li>
+                <li>🩺 Visits</li>
+                <li>📊 Statistics</li>
+                <li>📑 Reports</li>
+                <li>💰 Price</li>
+                <li>🏥 Cabinets</li>
+                <li>⚙ Settings</li>
+            </ul> 
+            <div class="upgrade">
+                <p>Upgrade to PRO</p>
+                <button>Update to Pro</button>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <input class="search" placeholder="Search">
+                <div class="top-icons">
+                    <span>🌐 EN</span>
+                    <span>🔔</span>
+                    <img src="..//assests/fille-souriante-aux-cheveux-tresses_1308-170677.avif">
+                </div>
+            </header>
+            <section class="profile-card">
+                <div class="profile-left">
+                    <img src="..//assests/fille-souriante-aux-cheveux-tresses_1308-170677.avif">
+                    <h3>melisse krit</h3>
+                    <p>+213 732 31 45 67</p>
+                </div>
+                <div class="profile-info">
+                    <h4>General Information</h4>
+                    <div class="info-grid">
+                        <p><b>Date of birth</b><br>23.07.1994</p> 
+                        <p><b>Address</b><br>tlmecen</p>
+                        <p><b>Registration</b><br>Thursday</p>
+                    </div>
+                </div>
+            </section>
+            <section class="appointments">
+                <h3>Future Visits</h3>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Service</th> 
+                        <th>Doctor</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>26 Sep</td>
+                        <td>blood analysis</td>
+                        <td>Diana M.</td> 
+                        <td class="status">Scheduled</td>
+                    </tr>
+                    <tr>
+                        <td>27 Sep</td>
+                        <td>cardiac surgery</td>
+                        <td>Max O.</td>
+                        <td class="status">Scheduled</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <aside class="right">
+            <div class="card">
+                <h3>Files</h3>
+                <ul>
+                    <li>📄 Check up result</li>
+                    <li>📄 Prescription</li>
+                    <li>📄 Medical report</li>
+                </ul>
+            </div>
+            <div class="card calendar">
+                <h3>Calendar</h3>
+                <div class="calendar-grid"></div>
+            </div>
+            <div class="card availability">
+                <h3>Doctor Availability</h3>
+                <p>Monday — Friday</p>
+                <p>9:00 AM – 5:00 PM</p>
+            </div>
+        </aside>
+    </div>
+    <section class="chatbot">
+            <span class="chat-icon">💬</span>
+                <div class="chat-window">
+                    <p class="chat-header">AI Assistant</p>
+                    <div class="chat-body">             
+                        <p>Hello 👋 How can I help?</p>
+                    </div>
+                    <input placeholder="Ask something...">
+                </div>
+    </section>
+</body>
+<script src="..//js/dashboard.js"></script>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeline AI | Medical Profile</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/png" href="assests/logo.png.png">
+</head>
+<body>
+    <div class="form-container">
+        <h1>❤️ Lifeline AI Medical Profile</h1>
+        <p class="subtitle">Fill your emergency medical information so doctors can access it instantly.</p>
+        <form>
+<!-- PERSONAL INFO -->
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <div class="grid">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" required placeholder="enter here...">
+                    </div>
+                    <div class="input-group">
+                        <label>Date of Birth</label>
+                        <input type="date" required placeholder="enter here...">
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select required >
+                            <option value="">Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Blood Type</label>
+                        <select required >
+                            <option value="">Select</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>National ID Number</label>
+                        <input type="number" required placeholder="enter here...">
+                    </div>
+                </div>
+            </section>
+<!-- EMERGENCY CONTACT -->
+            <section class="form-section">
+                <h2>Emergency Contact</h2>
+                <div class="grid">
+                    <div class="input-group">
+                        <label>Contact Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Relationship</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+            </section>
+<!-- MEDICAL INFO -->
+            <section class="form-section">
+                <h2>Medical Information</h2>
+                <div class="grid">
+                    <div class="input-group full">
+                        <label>Allergies</label>
+                        <textarea placeholder="Penicillin, peanuts, etc"></textarea>
+                    </div>
+                    <div class="input-group full">
+                        <label>Chronic Diseases</label>
+                        <textarea placeholder="Diabetes, asthma, heart disease..."></textarea>
+                    </div>
+                    <div class="input-group full">
+                        <label>Current Medications</label>
+                        <textarea placeholder="List medications you take regularly"></textarea>
+                    </div>
+                    <div class="input-group full">
+                        <label>Past Surgeries</label>
+                        <textarea placeholder="Mention any major surgeries"></textarea>
+                    </div>
+                    <div class="input-group full">
+                        <label>Additional Medical Notes</label>
+                        <textarea placeholder="Any other important information"></textarea>
+                    </div>
+                </div>
+            </section>
+            <button class="submit-btn">Save Medical Profile</button>
+<!-- GENERATE QR -->
+            <button type="button" onclick="generateQR()" class="qr-btn">Generate My Emergency QR</button>
+<!-- QR DISPLAY -->
+            <div class="qr-section">
+                <h3>Your Emergency QR Code</h3>
+                <div class="qr-box">
+                    <img id="qr-image" src="">
+                </div>
+                <a id="downloadQR" class="download-btn" download="lifelineQR.png">⬇ Download Emergency QR</a>
+            </div>
+                <p class="qr-note">Show this QR code to doctors during emergencies.</p>
+        </form>
+    </div>
+</body>
+<script src="../js/qrcode.js"></script>
+</html>
